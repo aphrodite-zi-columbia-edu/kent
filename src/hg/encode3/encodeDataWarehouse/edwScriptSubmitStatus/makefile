@@ -1,7 +1,7 @@
 kentSrc = ../../../..
 include $(kentSrc)/inc/common.mk
 
-L += -luuid -lm ${MYSQLLIBS}
+L += -luuid -lm ${MYSQLLIBS} -ldl -lm
 MYLIBDIR = $(kentSrc)/lib/${MACHTYPE}
 MYLIBS =  ../lib/$(MACHTYPE)/edwlib.a ${MYLIBDIR}/jkhgap.a ${MYLIBDIR}/jkweb.a
 

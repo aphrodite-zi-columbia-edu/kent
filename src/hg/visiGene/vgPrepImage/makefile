@@ -13,7 +13,7 @@ endif
 
 CFLAGS = -pipe -Wall -W -O2 -DLINUX -DUNICODE -D_REENTRANT -DPOSIX
 
-L += -lm -ljpeg
+L += -lm -ljpeg -ldl -lm
 MYLIBDIR = ../../../lib/${MACHTYPE}
 MYLIBS =  ${MYLIBDIR}/jkweb.a ${ERLIBS}
 

@@ -1,7 +1,7 @@
 kentSrc = ../../..
 include ../../../inc/common.mk
 
-L += -lm
+L += -lm -ldl -lm
 MYLIBDIR = ../../../lib/${MACHTYPE}
 MYLIBS = ../lib/${MACHTYPE}/encode.a ${MYLIBDIR}/jkweb.a 
 

@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = bedToBigBed
 include $(kentSrc)/inc/userApp.mk
-L += -lm -lz ${SOCKETLIB}
+L += -lm -lz ${SOCKETLIB} -ldl -lm
 
 cgi:: compile
 	chmod a+rx $A${EXE}

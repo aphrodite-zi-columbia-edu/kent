@@ -2,7 +2,7 @@ kentSrc = ../..
 include ../../inc/common.mk
 
 
-L += /usr/lib/mysql/libmysqlclient.a -lm
+L += /usr/lib/mysql/libmysqlclient.a -lm -ldl -lm
 
 O = tabTable.o 
 

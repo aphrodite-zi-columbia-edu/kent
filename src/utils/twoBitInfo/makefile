@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = twoBitInfo
 include $(kentSrc)/inc/userApp.mk
-L += -lm ${SOCKETLIB}
+L += -lm ${SOCKETLIB} -ldl -lm
 
 clean::
 	rm -fr tests/output

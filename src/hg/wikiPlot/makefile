@@ -3,7 +3,7 @@ include ../../inc/common.mk
 include ../../inc/cgi_build_rules.mk
 
 
-L += ${MYSQLLIBS} -lm
+L += ${MYSQLLIBS} -lm -ldl -lm
 MYLIBDIR = ../../lib/${MACHTYPE}
 MYLIBS =  ${MYLIBDIR}/jkhgap.a ${MYLIBDIR}/jkweb.a
 

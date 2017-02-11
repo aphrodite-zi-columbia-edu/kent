@@ -7,7 +7,7 @@ AUTOSQLJSON = ${AUTOSQL} -json
 DIFF = diff -u
 XINC = -I.
 
-L += -lm
+L += -lm -ldl -lm
 MYLIBDIR = ../../../lib/${MACHTYPE}
 MYLIBS =  ${MYLIBDIR}/jkhgap.a ${MYLIBDIR}/jkweb.a
 

@@ -3,7 +3,7 @@ A = pslLiftSubrangeBlat
 preMyLibs += ../../lib/$(MACHTYPE)/jkhgap.a
 include $(kentSrc)/inc/userApp.mk
 HG_INC += -I../../hg/inc
-L += $(MYSQLLIBS) -lm
+L += $(MYSQLLIBS) -lm -ldl -lm
 
 test::
 	cd tests && ${MAKE} test

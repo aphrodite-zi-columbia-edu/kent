@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = git-reports
 include $(kentSrc)/inc/userApp.mk
-L += -lm ${SOCKETLIB}
+L += -lm ${SOCKETLIB} -ldl -lm
 
 install::
 	${MAKE} BINDIR=/cluster/bin/${MACHTYPE}

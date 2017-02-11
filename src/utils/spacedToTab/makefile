@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = spacedToTab
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 test::
 	spacedToTab in.txt out.tab

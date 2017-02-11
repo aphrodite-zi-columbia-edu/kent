@@ -1,7 +1,7 @@
 kentSrc = ..
 include ../inc/common.mk
 
-L += -lm $(SOCKETLIB) -lz
+L += -lm $(SOCKETLIB) -lz -ldl -lm
 MYLIBDIR = ../lib/$(MACHTYPE)
 MYLIBS =  $(MYLIBDIR)/jkOwnLib.a $(MYLIBDIR)/jkweb.a 
 

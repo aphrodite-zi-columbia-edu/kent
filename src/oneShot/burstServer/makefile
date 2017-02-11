@@ -1,7 +1,7 @@
 kentSrc = ../..
 include ../../inc/common.mk
 
-L += -lm -lpthread
+L += -lm -lpthread -ldl -lm
 MYLIBDIR = ../../lib/$(MACHTYPE)
 MYLIBS =  $(MYLIBDIR)/jkhgap.a $(MYLIBDIR)/jkweb.a
 

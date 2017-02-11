@@ -1,4 +1,4 @@
 kentSrc = ../..
 A = faSize
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm

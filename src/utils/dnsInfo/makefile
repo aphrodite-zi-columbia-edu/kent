@@ -1,7 +1,7 @@
 kentSrc = ../..
 include ../../inc/common.mk
 
-L += -lm -lsocket -lresolv
+L += -lm -lsocket -lresolv -ldl -lm
 MYLIBDIR = ../../lib/$(MACHTYPE)
 MYLIBS =  $(MYLIBDIR)/jkweb.a
 

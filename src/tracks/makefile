@@ -1,7 +1,7 @@
 kentSrc = ..
 include ../inc/common.mk
 
-L += $(MYSQLLIBS) -lz -lm
+L += $(MYSQLLIBS) -lz -lm -ldl -lm
 MYLIBDIR = ../lib/$(MACHTYPE)
 MYLIBS =  $(MYLIBDIR)/jkweb.a
 

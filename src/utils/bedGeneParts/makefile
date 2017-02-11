@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = bedGeneParts
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 test::
 	bedGeneParts firstExon test.in firstExon.out

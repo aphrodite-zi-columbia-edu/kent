@@ -4,7 +4,7 @@ include ../../inc/common.mk
 JKSRCDIR = /projects/compbiousr/kent/src
 JKLIBDIR = $(JKSRCDIR)/lib/$(MACHTYPE)
 
-L += $(MYSQLLIBS) -lm 
+L += $(MYSQLLIBS) -lm  -ldl -lm
 MYLIBS =  $(JKLIBDIR)/jkhgap.a $(JKLIBDIR)/jkweb.a
 
 O = cgiExample.o

@@ -1,4 +1,4 @@
 kentSrc = ../..
 A = faSimplify
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm

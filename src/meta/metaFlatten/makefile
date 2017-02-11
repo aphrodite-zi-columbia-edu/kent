@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = metaFlatten
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 test::
 	$A -indent=2 -withParent test.in test.out

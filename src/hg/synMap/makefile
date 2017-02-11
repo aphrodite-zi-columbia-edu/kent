@@ -1,5 +1,5 @@
 
-L += $(MYSQLLIBS) -lm 
+L += $(MYSQLLIBS) -lm  -ldl -lm
 MYLIBDIR = ../../lib/$(MACHTYPE)
 MYLIBS =  $(MYLIBDIR)/jkhgap.a $(MYLIBDIR)/jkweb.a
 

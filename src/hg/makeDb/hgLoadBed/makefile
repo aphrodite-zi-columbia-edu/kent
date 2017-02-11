@@ -1,7 +1,7 @@
 kentSrc = ../../..
 include ../../../inc/common.mk
 
-L += -lm ${MYSQLLIBS}
+L += -lm ${MYSQLLIBS} -ldl -lm
 MYLIBDIR = ../../../lib/${MACHTYPE}
 MYLIBS =  ${MYLIBDIR}/jkhgap.a ${MYLIBDIR}/jkweb.a
 SQL_FILES = ../../lib/encode/encodePeak.sql ../../lib/pgSnp.sql ../../lib/bedDetail.sql ../../lib/bigPsl.as

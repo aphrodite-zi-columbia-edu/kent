@@ -3,7 +3,7 @@ include ../../inc/common.mk
 
 HG_INC+=-I../../inc
 
-L += -lm ${SOCKETLIB}
+L += -lm ${SOCKETLIB} -ldl -lm
 MYLIBDIR = ../../lib/${MACHTYPE}
 MYLIBS = $(MYLIBDIR)/jkweb.a 
 

@@ -1,4 +1,4 @@
 kentSrc = ../..
 A = splitFileByColumn
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm

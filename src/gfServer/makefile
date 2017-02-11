@@ -2,7 +2,7 @@ kentSrc = ..
 A = gfServer
 preMyLibs += ../lib/$(MACHTYPE)/jkOwnLib.a
 include $(kentSrc)/inc/userApp.mk
-L += -lm $(SOCKETLIB)
+L += -lm $(SOCKETLIB) -ldl -lm
 
 test::
 	${MKDIR} tests/output

@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = rowsToCols
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 clean::
 	rm -fr tests/out

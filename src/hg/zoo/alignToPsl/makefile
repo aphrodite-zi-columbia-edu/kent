@@ -1,7 +1,7 @@
 kentSrc = ../../..
 include ../../../inc/common.mk
 
-L += -lm $(MYSQLLIBS)
+L += -lm $(MYSQLLIBS) -ldl -lm
 MYLIBDIR = ../zooLib/$(MACHTYPE)
 MYLIBS =  $(MYLIBDIR)/zoo.a
 

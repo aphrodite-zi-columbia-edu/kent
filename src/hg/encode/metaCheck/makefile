@@ -2,7 +2,7 @@ kentSrc = ../../..
 COPT= -g
 include ../../../inc/common.mk
 
-L += -lm  $(MYSQLLIBS)
+L += -lm  $(MYSQLLIBS) -ldl -lm
 
 MYLIBDIR = ../../../lib/${MACHTYPE}
 MYLIBS = ../lib/${MACHTYPE}/encode.a ${MYLIBDIR}/jkhgap.a ${MYLIBDIR}/jkweb.a

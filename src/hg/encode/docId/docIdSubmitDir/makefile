@@ -2,7 +2,7 @@ kentSrc = ../../../..
 COPT=-ggdb
 include ../../../../inc/common.mk
 
-L += $(MYSQLLIBS) -lm
+L += $(MYSQLLIBS) -lm -ldl -lm
 MYLIBDIR = ../../../../lib/${MACHTYPE}
 MYLIBS =  $(MYLIBDIR)/docId.a $(MYLIBDIR)/jkhgap.a ${MYLIBDIR}/jkweb.a
 

@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = bedCommonRegions
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 test::
 	bedCommonRegions tests/in/1.bed tests/in/2.bed tests/in/3.bed > tests/out.bed

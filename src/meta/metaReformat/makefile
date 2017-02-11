@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = metaReformat
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 test::
 	$A -indent=8 -withParent test.in test.out

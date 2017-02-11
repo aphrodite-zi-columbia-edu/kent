@@ -7,7 +7,7 @@ include ../../inc/common.mk
 
 A = qaPushQ
 
-L += $(MYSQLLIBS) -lm -lcrypt
+L += $(MYSQLLIBS) -lm -lcrypt -ldl -lm
 MYLIBDIR = ../../lib/${MACHTYPE}
 MYLIBS = $(MYLIBDIR)/jkhgap.a $(MYLIBDIR)/jkweb.a 
 

@@ -1,4 +1,4 @@
 kentSrc = ../..
 A = findMotif
 include $(kentSrc)/inc/userApp.mk
-L += -lm ${SOCKETLIB}
+L += -lm ${SOCKETLIB} -ldl -lm

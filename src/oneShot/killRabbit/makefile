@@ -2,7 +2,7 @@ kentSrc = ../..
 include ../../inc/common.mk
 
 
-L += $(MYSQLLIBS) -lm 
+L += $(MYSQLLIBS) -lm  -ldl -lm
 
 O = killRabbit.o
 

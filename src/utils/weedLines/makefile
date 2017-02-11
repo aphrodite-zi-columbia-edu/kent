@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = weedLines
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 test::
 	weedLines input.weed input.txt out.good -weeded=out.bad

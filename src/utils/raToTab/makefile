@@ -1,7 +1,7 @@
 kentSrc = ../..
 A = raToTab
 include $(kentSrc)/inc/userApp.mk
-L += -lm
+L += -lm -ldl -lm
 
 clean::
 	rm -f out.tab out2.tab
